@@ -1,7 +1,7 @@
 <?php
 define("DSN", "mysql:host=localhost;dbname=cms");
 define("USERNAME", "root");
-define("PASSWORD", "password");
+define("PASSWORD", "");
 $options = array(PDO::ATTR_PERSISTENT => true);
 try{
   $conn = new PDO(DSN, USERNAME, PASSWORD, $options);
