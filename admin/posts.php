@@ -9,7 +9,15 @@
                     <div class="col-lg-12">
                         <h1 class="page-header">
                             Posts
-                            <small><?php echo $firstname .' '. $lastname; ?></small>
+                            <small>
+                            <?php 
+                                if(isset($firstname) || isset($lastname)){
+                                    echo $firstname .' '. $lastname; 
+                                } else {
+                                    echo "John Doe";
+                                }
+                            ?>         
+                            </small>
                         </h1>
                         <?php 
                         if(isset($_GET['source'])){

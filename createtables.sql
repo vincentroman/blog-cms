@@ -1,8 +1,7 @@
 --CMS Database Name
 CREATE DATABASE cms;
 
---Categories table
-CREATE TABLE cms.category(
+CREATE TABLE cms.categories(
 	cat_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY, 
 	cat_title VARCHAR(30) NOT NULL);
 

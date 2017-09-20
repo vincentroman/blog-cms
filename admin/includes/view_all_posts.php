@@ -1,5 +1,6 @@
 <?php ob_start(); ?>
         <?php 
+        if(isset($role)){
             if($role === 'Admin'){
                 $postsQuery = "SELECT * FROM posts";
                 $pstm = $conn->query($postsQuery);
@@ -91,6 +92,7 @@
             } else {
                 echo "<h3 class='alert alert-info'><strong>Sorry! </strong>There are no current posts. Click<a style='text-decoration: underline;' href='posts.php?source=add_post'> Here </a> to add a post.</h3>";
             }
+        }
         ?>
 
 <?php 

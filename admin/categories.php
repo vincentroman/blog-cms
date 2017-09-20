@@ -9,7 +9,15 @@
                     <div class="col-lg-12">
                         <h1 class="page-header">
                             Categories
-                            <small><?php echo $firstname .' '. $lastname; ?></small>
+                            <small>
+                            <?php 
+                                if(isset($firstname) || isset($lastname)){
+                                    echo $firstname .' '. $lastname; 
+                                } else {
+                                    echo "John Doe";
+                                }
+                            ?>  
+                            </small>
                         </h1>
                         <div class="col-xs-6">
                         <?php
