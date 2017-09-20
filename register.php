@@ -2,13 +2,14 @@
 ob_start();
 require 'bootstrap.php';
 include 'includes/header.php';
+include 'controllers/register.php';
 ?>
 <div class="container">
 	<div class="well">
 	<h2 class="text-center">Register</h2>
 		<div class="row">
 			<div class="col-xs-12">
-				<div id="register_form">
+				<form id="register_form" method="post" action="">
 					<div class="form-group">
 						<label for="first_name">First Name</label>
 						 <input class="form-control" type="text" name="first_name">
@@ -34,7 +35,7 @@ include 'includes/header.php';
 						<input class="form-control" type="password" name="confirm_password" autocomplete="off">
 					</div>
 					<input class="btn btn-primary" type="submit" value="Register" name="register_user">
-				</div><!--End of #register_form-->
+				</form><!--End of #register_form-->
 			</div>
 		</div>
 	</div>

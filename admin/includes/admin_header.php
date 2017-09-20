@@ -1,20 +1,20 @@
 <?php 
-// ob_start(); 
-// session_start();
+ob_start(); 
+session_start();
 
-// if(!isset($_SESSION['user_id'])){
-//     header("Location: ../index.php");
-// } elseif(!$_SESSION['role'] === 'Admin'){
-//     header("Location: ../index.php");
-// } else {
-//     $id = $_SESSION['user_id'];
-//     $email = $_SESSION['user_email'];
-//     $username = $_SESSION['username'];
-//     $firstname = $_SESSION['firstname'];
-//     $lastname = $_SESSION['lastname'];
-//     $role = $_SESSION['role'];
-//     $image = $_SESSION['image'];
-// }
+if(!isset($_SESSION['user_id'])){
+    header("Location: ../index.php");
+} elseif(!$_SESSION['role'] === 'Admin'){
+    header("Location: ../index.php");
+} else {
+    $id = $_SESSION['user_id'];
+    $email = $_SESSION['user_email'];
+    $username = $_SESSION['username'];
+    $firstname = $_SESSION['firstname'];
+    $lastname = $_SESSION['lastname'];
+    $role = $_SESSION['role'];
+    $image = $_SESSION['image'];
+}
 
 ?>
 <?php include_once '../includes/db.php'; ?>
