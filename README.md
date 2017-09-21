@@ -1,7 +1,7 @@
 <h1 align="center">Blog CMS</h1>
 <p>A blogging system built in php that hadles an admin user, registration of regular users/bloggers 
-and will eventually be able to have subscribers. This specific code base is a little messy at the 
-and will be under continuous refactoring. But feel free to check it out and play with it yourself.</p>
+and will eventually be able to have subscribers. This specific code base is a little messy so far but 
+it will be under continuous refactoring for awhile. But feel free to check it out and play with it yourself.</p>
 
 <h3>Set Up</h3>
 <ol>
