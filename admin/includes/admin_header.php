@@ -17,7 +17,7 @@ if(!isset($_SESSION['user_id'])){
 }
 
 ?>
-<?php include_once '../includes/db.php'; ?>
+<?php require '../bootstrap.php' ?>
 <!DOCTYPE html>
 <html style="background: #263238;" lang="en">
 <head>
